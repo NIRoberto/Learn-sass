@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: column;
+  .sub-nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(100, 99, 99);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      list-style-type: none;
+      li {
+        text-align: center;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em;
+    background-color: cadetblue;
+    z-index: 10;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      text-transform: capitalize;
+      li {
+        a {
+          color: black;
+          text-decoration: none;
+          margin-right: 2em;
+        }
+      }
+    }
+  }
+}
